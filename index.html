@@ -55,16 +55,18 @@
 
 		resetVisualState();
 
-	  //$.post("http://localhost:8080/rjj/register", $('#register-form').serialize())
-    $.post("http://www.reigatejuniorjoggers.co.uk/clubbed-services/rjj/register", $('#register-form').serialize())
+	  //$.post("http://localhost:8080/register", $('#register-form').serialize())
+    $.post("http://www.reigatejuniorjoggers.co.uk/clubbed-services/register", $('#register-form').serialize())
 			.done(function (response) {
 				if (response === 'OK') {
+
 					const formRow = $('#form-row');
+					const emailAddress = $('#register-form').find('input').val();
 
 					formRow.children().remove();
 					formRow.append('<div><i class="text-success fa fa-4x fa-check-circle"></i></div>',
 							'Done!<br/>',
-							'Thanks for registering your interest. Confirmation has been sent to: <span class="text-info">' + $form.find('input').val() + '</span>. (Please check your junk mail!)');
+							'Thanks for registering your interest. Confirmation has been sent to: <span class="text-info">' + emailAddress + '</span>. (Please check your junk mail!)');
 				}
 				else {
 					setErrorState()
