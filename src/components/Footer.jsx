@@ -1,20 +1,23 @@
-import React from 'react';
+import { h, render, Component } from 'preact';
 
-export default class Footer extends React.Component {
-	render() {
+// Tell Babel to transform JSX into h() calls:
+/** @jsx h */
+
+export default class Footer extends Component {
+	render(props, state) {
 		return (
-			<footer className="mt-3" style={{fontSize: '.75em'}}>
-				<div className="container-fluid bg-light text-secondary">
-					<div className="row pt-3 text-center justify-content-center">
-						<div className="col-auto">
+			<footer class="mt-3" style={{fontSize: '.75em'}}>
+				<div class="container-fluid bg-light text-secondary">
+					<div class="row pt-3 text-center justify-content-center">
+						<div class="col-auto">
 							Mens
-							<ul className="list-unstyled">
+							<ul class="list-unstyled">
 								<li><a href="http://www.reigatemensjoggers.co.uk">Reigate</a></li>
 							</ul>
 						</div>
-						<div className="col-auto">
+						<div class="col-auto">
 							Ladies
-							<ul className="list-unstyled">
+							<ul class="list-unstyled">
 								<li><a href="http://www.reigateladiesjoggers.co.uk">Reigate</a></li>
 								<li><a href="http://www.caterhamladiesjoggers.co.uk">Caterham</a></li>
 								<li><a href="http://www.dorkingladiesjoggers.co.uk">Dorking</a></li>
