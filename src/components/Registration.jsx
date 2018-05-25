@@ -1,8 +1,4 @@
 import { h, render, Component } from 'preact';
-
-// Tell Babel to transform JSX into h() calls:
-/** @jsx h */
-
 import $ from "jquery";
 
 import {SITE_API_URL} from "../site-constants";
