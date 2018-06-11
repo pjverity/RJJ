@@ -19,6 +19,7 @@ export default class Footer extends Component {
 								<li><a href="http://www.caterhamladiesjoggers.co.uk">Caterham</a></li>
 								<li><a href="http://www.dorkingladiesjoggers.co.uk">Dorking</a></li>
 								<li><a href="http://www.horshamladiesjoggers.co.uk">Horsham</a></li>
+								<li><a href="http://www.oxtedladiesjoggers.co.uk">Oxted</a></li>
 							</ul>
 						</div>
 						<div className="col-4 col-sm-2">
