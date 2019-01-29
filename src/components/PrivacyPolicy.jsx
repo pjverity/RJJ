@@ -15,7 +15,7 @@ export default class PrivacyPolicy extends Component {
 						<div class={'col'}>
 							<h1 class={'text-center'}>Privacy Policy</h1>
 
-							<p>Feel free to read the <a href={'https://el2.convertkit-mail.com/c/k0ukd7w6pc6h22n3n/zvtghn/aHR0cDovL25pY29sYXNlbXBsZS5jb20vcHJpdmFjeS1wb2xpY3kv'}>Privacy Policy</a> in it's entirety (ideal bedtime reading for the insomniacs out there) but the highlights are:</p>
+							<p>Feel free to read the Privacy Policy in it's entirety (ideal bedtime reading for the insomniacs out there) but the highlights are:</p>
 
 							<ul>
 								<li>We will not send you spam</li>
@@ -82,12 +82,11 @@ export default class PrivacyPolicy extends Component {
 							<p>Reigate Joggers securely stores images taken from our classes and events. No names are stored with images in photo albums, displays, on the website or
 								on Reigate Joggers social media sites. We will delete images when we are no longer using for marketing purposes.</p>
 							<p>For all classes there is an opt in policy for photography.</p>
-							<p>If you would not like your child to be photographed please notify Reigate Joggers – <a href={'mailto:admin@reigateladiesjoggers.co.uk'}>admin@reigateladiesjoggers.co.uk</a></p>
+							<p>If you would not like your child to be photographed please notify Reigate Joggers – <a href={'mailto:admin@reigatejuniorjoggers.co.uk'}>admin@reigatejuniorjoggers.co.uk</a></p>
 
 							<h2>Financial Data</h2>
 							<p>It is our company policy not to keep any of your financial data on file. Once the booking process is complete the financial information is NOT stored by
 								Reigate Joggers.</p>
-							<p>Our websites contains the highest level of security and SSL certification.</p>
 
 							<h2>Security</h2>
 							<p>We are committed to ensuring that your information is secure. In order to prevent unauthorised access or disclosure we have put in place suitable
@@ -112,7 +111,7 @@ export default class PrivacyPolicy extends Component {
 							<p>If you believe that any information we are holding on you is incorrect or incomplete, please write to or email us as soon as possible, at the above
 								address. We will promptly correct any information found to be incorrect.</p>
 							<p>Reigate Joggers may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are
-								happy with any changes. This policy is effective from XX/05/2018.</p>
+								happy with any changes. This policy is effective from 22/05/2018.</p>
 
 							<h2>Your acceptance of these terms</h2>
 							By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of
