@@ -21,10 +21,11 @@ export default class Footer extends Component {
 								<li><a href="http://www.horshamladiesjoggers.co.uk">Horsham</a></li>
 								<li><a href="http://www.oxtedladiesjoggers.co.uk">Oxted</a></li>
 							</ul>
+§							<Link activeClassName={'visible'} href={'/privacy-policy'}>Our Privacy Policy</Link>
 						</div>
-						<div className="col-4 col-sm-2">
+						<div class="col-4 col-sm-2">
 							Juniors
-							<ul className="list-unstyled">
+							<ul class="list-unstyled">
 								<li class="text-muted">Reigate</li>
 							</ul>
 						</div>
