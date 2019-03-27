@@ -30,20 +30,12 @@ export default class Registration extends Component
 	render(props, state)
 	{
 		return (
-			<div class="row m-4 pt-4 pb-4 align-items-center">
-
-
-				<div class="col-md-6 col-sm-12">
-					<h4 class="text-center text-md-right">Get your first run for <span class="text-success font-italic">FREE!</span></h4>
-
-					<p class="text-center text-md-right">Simply register your details and follow the instructions in the email to claim your free token</p>
-					<p class="font-weight-light text-center text-md-right border-left border-right pl-2 pr-2 border-warning" style={{'fontSize': '.75em'}}>If you haven't got a mail in your <strong>Inbox</strong> in the next minute or two, it's probably sitting
-						in your Junk/Spam folder. Open it and click <strong> Not Junk</strong> to avoid missing out!</p>
-				</div>
-
+			<div class="row m-4 pt-4 pb-4 justify-content-center">
 
 				<div class="col-md-6 col-sm-12">
+
 					<form id="enquiry-form">
+						<h5 className="text-center mb-4">Simply register your details here to get more information</h5>
 
 						<div class="row form-group">
 							<div class="col-12 col-md-6">
@@ -94,7 +86,7 @@ export default class Registration extends Component
 								<div class="card-body">
 									<h4><i class="text-success align-middle fa fa-fw fa-2x fa-check-circle"/> Thanks for Registering!</h4>
 									<small class="text-muted">Confirmation has been sent to: <span id="confirm-email" class="text-info"/><br/>
-										(Please note the information regarding Junk/Spam)
+										(Please check your Junk/Spam folders if you haven't received confirmation in your inbox)
 									</small>
 								</div>
 							</div>

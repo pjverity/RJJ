@@ -1,6 +1,6 @@
 import { h, render, Component } from 'preact'
 
-import Schedules from './schedules/Schedules.jsx'
+import StaticSchedule from "./schedules/StaticSchedule.jsx";
 import Registration from './Registration.jsx'
 
 import {SITE_API_URL} from '../site-constants'
@@ -16,7 +16,7 @@ export default class Main extends Component {
 	}
 
 	componentDidMount() {
-		this.requestActiveSchedules();
+		//this.requestActiveSchedules();
 	}
 
 	render(props, state) {
@@ -27,7 +27,7 @@ export default class Main extends Component {
 						<div className='col'>
 							<hr className='d-none d-sm-block'/>
 						</div>
-						<div className='h4'>Upcoming Courses</div>
+						<div className='h4'>Junior Joggers Sessions</div>
 						<div className='col'>
 							<hr className='d-none d-sm-block'/>
 						</div>
@@ -40,7 +40,7 @@ export default class Main extends Component {
 						</button>
 					</div>
 					}
-					<Schedules schedules={this.state.schedules} isEditable={false}/>
+					<StaticSchedule />
 					<hr/>
 					<Registration/>
 				</div>
