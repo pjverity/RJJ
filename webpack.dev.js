@@ -10,7 +10,7 @@ module.exports = merge(common, {
 		historyApiFallback: true,
 		proxy: {
 			'/enquiries': {
-				target: 'http://localhost:8080/',
+				target: 'http://localhost:8081/',
 				secure: false,
 				xfwd: true,
 				autoRewrite: true,
