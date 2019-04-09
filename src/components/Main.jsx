@@ -2,6 +2,7 @@ import { h, render, Component } from 'preact'
 
 import StaticSchedule from "./schedules/StaticSchedule.jsx";
 import Registration from './Registration.jsx'
+import Gallery from './Gallery.jsx'
 
 import {SITE_API_URL} from '../site-constants'
 import {getJSON} from '../ajaxutils'
@@ -43,6 +44,8 @@ export default class Main extends Component {
 					<StaticSchedule />
 					<hr/>
 					<Registration/>
+					<hr/>
+					<Gallery />
 				</div>
 			</main>
 		);
