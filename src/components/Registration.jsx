@@ -1,5 +1,6 @@
 import { h, render, Component } from 'preact';
-import $ from "jquery";
+
+import {postJSON} from '../ajaxutils'
 
 let REGISTRATION_URL = '/registration/register/';
 
@@ -102,22 +103,26 @@ export default class Registration extends Component
 
 		this.startProgress();
 
-		const email = this.state.$enquiryForm.find("input[name='email']").val();
-
 		this.state.$enquiryForm.toggleClass('d-none', false);
 		this.state.$formSuccess.toggleClass('d-none', true);
 		this.state.$formErrors.toggleClass('d-none', true);
 		this.state.$formErrors.find('ul').empty();
 
-		$.post(REGISTRATION_URL + email, this.state.$enquiryForm.serialize())
-			.done( (response) => {
-				console.log(response);
+		const email = this.state.$enquiryForm.find("input[name='email']").val();
+		const firstName = this.state.$enquiryForm.find("input[name='firstName']").val();
+		const lastName = this.state.$enquiryForm.find("input[name='lastName']").val();
+		const phone = this.state.$enquiryForm.find("input[name='phone']").val();
 
+		postJSON(REGISTRATION_URL + email, {
+			firstName: firstName,
+			lastName: lastName,
+			phone: phone
+		}).done((response) => {
 				this.setSuccessState(email);
-			})
-			.fail((jqxhr, textStatus, error) => {
-				if (jqxhr.status === 500) {
+		}).fail((jqxhr, textStatus, error) => {
 					console.error(jqxhr.responseJSON);
+
+			if (jqxhr.status === 500) {
 
 					if (jqxhr.responseJSON.message === undefined) {
 						this.setErrorState(jqxhr.responseJSON);
@@ -129,8 +134,7 @@ export default class Registration extends Component
 						this.state.$formErrors.toggleClass('d-none', false);
 					}
 				}
-			})
-			.always(() => this.stopProgress());
+		}).always(() => this.stopProgress());
 
 	}
 
